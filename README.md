@@ -2,9 +2,9 @@
 
 In the spirit of Ubuntu I have decided to put together boilerplate templates and references.
 
-[Web API](Web%20API/README.md)
-* [ASP.NET MVC](/ASP.NET MVC/README.md)
-* [.Net Core Console Application](/.Net Core Console Application/README.md)
+* [Web API](Web%20API/README.md)
+* [ASP.NET MVC](ASP.NET%20MVC/README.md)
+* [.Net Core Console Application](.Net%20Core%20Console%20Application/README.md)
 
 # Ubuntu
 
