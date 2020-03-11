@@ -9,21 +9,16 @@ namespace ShoppingCart.Business
     {
         private readonly List<IPriceRule> _pricingRules;
 
-        public PricingCalculator()
+        public PricingCalculator(List<IPriceRule> pricingRules)
         {
-            //Although this class is not closed to modification, new classes are simply added here that match a new price rule
-            //The new classes can then be tested without worrying about regression on existing classes
-
-            _pricingRules = new List<IPriceRule>
-            {
-                new EachPriceRule(),
-                new WeightPriceRule()
-            };
+            _pricingRules = pricingRules;
         }
 
         public decimal CalculatePrice(OrderItemModel item)
         {
-            return _pricingRules.First(r => r.IsMatch(item)).CalculatePrice(item);
+            return _pricingRules
+                .First(r => r.IsMatch(item))
+                .CalculatePrice(item);
         }
     }
 }
