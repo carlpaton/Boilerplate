@@ -8,7 +8,8 @@ using System.Collections.Generic;
 
 namespace ShoppingCart.Unit_Tests
 {
-    //Test class naming convention suggested by Steve Smith ~ https://ardalis.com/unit-test-naming-convention
+    // Test class naming convention suggested by Steve Smith ~ https://ardalis.com/unit-test-naming-convention
+    // This is using the test framework `MS Test`
 
     [TestClass]
     public class CartServiceTotalShouldReturn
