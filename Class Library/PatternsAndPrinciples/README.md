@@ -32,17 +32,36 @@ The factory checks the enum `PriceRuleType` and returns the correct concrete pri
 
 **Class**: `CartServiceTests`
 
-This is using NUnit in the namespace `NUnit.Framework`
-
 The test naming convention followed is UnitOfWork_InitialCondition_ExpectedResult with a AAA pattern of `Arrange`, `Act` and `Assert`.
 
-### Extending ShoppingCart2
+### Reflection 
 
 The factory in `ShoppingCart2` can use reflection instead of the switch statement, so `PriceRule Create` would just have:
 
-```
-return (PriceRule)Activator.CreateInstance(
-Type.GetType($"ShoppingCart2.Business.PriceRules.{priceRuleType}PriceRule"),
-new object[] { });
+```c#
+public PriceRule Create(PriceRuleType priceRuleType)
+{
+	try
+	{
+		return (PriceRule)Activator.CreateInstance(
+		Type.GetType($"ShoppingCart2.Business.PriceRules.{priceRuleType}PriceRule"));
+	}
+	catch
+	{
+		return null;
+	}
+}
 ```
 
+If the price rule's constructor took parameters you could just include `new object[] { foo, bar }`
+
+```c#
+(PriceRule)Activator.CreateInstance(
+Type.GetType($"ShoppingCart2.Business.PriceRules.{priceRuleType}PriceRule"),
+new object[] { foo, bar });
+```
+
+Doing this makes this class open to extension but closed for modification. The caveat would be your rules would need to:
+
+* follow the naming convention `PriceRuleType`PriceRule
+* reside in the same folder Business/PriceRules/
