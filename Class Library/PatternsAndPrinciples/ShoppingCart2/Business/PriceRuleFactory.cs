@@ -25,4 +25,27 @@ namespace ShoppingCart2.Business
             }
         }
     }
+
+    // The above can be refactored to use reflection to determine the return typo
+    // Doing this makes this class open to extension but closed for modification.
+    // The caviet would be your rules would need to:
+    // 1. follow the naming convention `PriceRuleType`PriceRule 
+    // 2. reside in the same folder Business/PriceRules/
+
+    public class PriceRuleFactoryWithReflection : IPriceRuleFactory
+    {
+        public PriceRule Create(PriceRuleType priceRuleType)
+        {
+            try
+            {
+                return (PriceRule)Activator.CreateInstance(
+                    Type.GetType($"ShoppingCart2.Business.PriceRules.{priceRuleType}PriceRule"),
+                        new object[] { });
+            }
+            catch
+            {
+                return null;
+            }
+        }
+    }
 }

@@ -20,6 +20,8 @@ Test class naming convention suggested by Steve Smith ~ https://ardalis.com/unit
 
 Another simple shopping cart example with pricing rules, this example uses a factory pattern.
 
+### PriceRuleFactory
+
 **Interface**: `IPriceRuleFactory`
 
 This returns the base class `PriceRule` which is abstract, there are then specific and concrete price rules that inherit from and implement `PriceRule` using the override keyword. Example `EachPriceRule`
@@ -33,3 +35,14 @@ The factory checks the enum `PriceRuleType` and returns the correct concrete pri
 This is using NUnit in the namespace `NUnit.Framework`
 
 The test naming convention followed is UnitOfWork_InitialCondition_ExpectedResult with a AAA pattern of `Arrange`, `Act` and `Assert`.
+
+### Extending ShoppingCart2
+
+The factory in `ShoppingCart2` can use reflection instead of the switch statement, so `PriceRule Create` would just have:
+
+```
+return (PriceRule)Activator.CreateInstance(
+Type.GetType($"ShoppingCart2.Business.PriceRules.{priceRuleType}PriceRule"),
+new object[] { });
+```
+
