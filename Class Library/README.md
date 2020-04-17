@@ -16,7 +16,7 @@ A simple way to demonstrate patterns and principles is with a class library.
 
 -- *Wikipedia* ([Open–closed principle - Wikipedia](https://en.wikipedia.org/wiki/Open–closed_principle/))
 
-Classic shopping cart examples [PatternsAndPrinciples](either injecting a IPricingCalculator or a IPriceRuleFactory)
+Classic shopping cart examples [either injecting an IPricingCalculator or using a factory IPriceRuleFactory](PatternsAndPrinciples)
 
 # Liskov substitution principle (LSP)
 
