@@ -18,7 +18,8 @@ Developers should not just write code, we must strive to produce solutions that 
 
 # Patterns & Principles
 * https://carlpaton.github.io/tags/patterns-principles/
-* https://github.com/charleyza/SOLID
+* https://github.com/carlpaton/SOLID
+* https://github.com/carlpaton/SolidSample
 
 # Ubuntu
 
