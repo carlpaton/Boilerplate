@@ -17,8 +17,8 @@ Developers should not just write code, we must strive to produce solutions that 
 * https://ardalis.com/unit-test-naming-convention
 
 # Patterns & Principles
-* https://carlpaton.co.za/category/patterns-principles/
-* https://github.com/charleyza/SOLID-1
+* https://carlpaton.github.io/tags/patterns-principles/
+* https://github.com/charleyza/SOLID
 
 # Ubuntu
 
