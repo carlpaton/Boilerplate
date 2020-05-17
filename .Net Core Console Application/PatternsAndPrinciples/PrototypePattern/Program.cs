@@ -1,5 +1,6 @@
 ﻿using PrototypePattern.CopyConstructorDemoNameSpace;
 using PrototypePattern.ICloneableDemoNameSpace;
+using PrototypePattern.ProtoTypeDemoNameSpace;
 using System;
 
 namespace PrototypePattern
@@ -13,7 +14,9 @@ namespace PrototypePattern
 
             // new ICloneableDemo();
 
-            new CopyConstructorDemo();
+            // new CopyConstructorDemo();
+
+            new IProtoTypeDemo();
         }
     }
 }
