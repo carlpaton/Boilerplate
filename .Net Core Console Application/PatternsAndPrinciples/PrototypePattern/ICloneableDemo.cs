@@ -48,7 +48,7 @@ namespace PrototypePattern.ICloneableDemoNameSpace
 
     public class ICloneableDemo
     {
-        public ICloneableDemo() 
+        public ICloneableDemo()
         {
             Console.WriteLine("ICloneableDemo");
             Console.WriteLine("----------------------------\n");
@@ -69,6 +69,7 @@ namespace PrototypePattern.ICloneableDemoNameSpace
             john2.FirstName = "John Two";
             john2.Address.HouseNumber = 111;
             john2.Address.StreetName = "Foo Street";
+            Console.WriteLine("Although this will work its a shallow copy:");
             Console.WriteLine(carl2);
             Console.WriteLine(john2);
 
