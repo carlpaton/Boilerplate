@@ -1,4 +1,5 @@
-﻿using PrototypePattern.ICloneableDemoNameSpace;
+﻿using PrototypePattern.CopyConstructorDemoNameSpace;
+using PrototypePattern.ICloneableDemoNameSpace;
 using System;
 
 namespace PrototypePattern
@@ -10,7 +11,9 @@ namespace PrototypePattern
             Console.WriteLine("Hello PrototypePattern!");
             Console.WriteLine("****************************\n");
 
-            new ICloneableDemo();
+            // new ICloneableDemo();
+
+            new CopyConstructorDemo();
         }
     }
 }
