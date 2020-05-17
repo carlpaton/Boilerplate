@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart2", "ShoppingCa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart", "ShoppingCart\ShoppingCart.csproj", "{41C0ECB5-F7F4-41F7-B13C-D49FE079AFAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{5A59693C-5A92-4725-8BF3-220B91A12A5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{5A59693C-5A92-4725-8BF3-220B91A12A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypePattern", "PrototypePattern\PrototypePattern.csproj", "{B73AB42F-0CB6-4B78-8F13-1AA55B2F7C78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5A59693C-5A92-4725-8BF3-220B91A12A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A59693C-5A92-4725-8BF3-220B91A12A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A59693C-5A92-4725-8BF3-220B91A12A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B73AB42F-0CB6-4B78-8F13-1AA55B2F7C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73AB42F-0CB6-4B78-8F13-1AA55B2F7C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73AB42F-0CB6-4B78-8F13-1AA55B2F7C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73AB42F-0CB6-4B78-8F13-1AA55B2F7C78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
