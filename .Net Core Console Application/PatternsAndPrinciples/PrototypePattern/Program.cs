@@ -1,6 +1,10 @@
-﻿using PrototypePattern.CopyConstructorDemoNameSpace;
+﻿using PrototypePattern.BinarySerializationDemoNameSpace;
+using PrototypePattern.CopyConstructorDemoNameSpace;
 using PrototypePattern.ICloneableDemoNameSpace;
+using PrototypePattern.JsonSerializationDemo2NameSpace;
+using PrototypePattern.JsonSerializationDemoNameSpace;
 using PrototypePattern.ProtoTypeDemoNameSpace;
+using PrototypePattern.XmlSerializationDemoNameSpace;
 using System;
 
 namespace PrototypePattern
@@ -16,7 +20,17 @@ namespace PrototypePattern
 
             // new CopyConstructorDemo();
 
-            new IProtoTypeDemo();
+            // new IProtoTypeDemo();
+
+            // new BinarySerializationDemo();
+
+            // new XmlSerializationDemo();
+
+            //System.Text.Json
+            // new JsonSerializationDemo();
+
+            //
+            new JsonSerializationDemo2();
         }
     }
 }
