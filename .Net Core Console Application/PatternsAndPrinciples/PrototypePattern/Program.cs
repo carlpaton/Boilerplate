@@ -29,7 +29,7 @@ namespace PrototypePattern
             //System.Text.Json
             // new JsonSerializationDemo();
 
-            //
+            //Newtonsoft.Json
             new JsonSerializationDemo2();
         }
     }
