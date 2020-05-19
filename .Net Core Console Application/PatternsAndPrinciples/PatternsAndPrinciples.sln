@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{31E084F1-B8AA-47C8-8166-34E9CAC09E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{31E084F1-B8AA-47C8-8166-34E9CAC09E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypePattern", "PrototypePattern\PrototypePattern.csproj", "{6190EA42-58BF-49C4-BFA6-12A2F2B3B7FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrototypePattern", "PrototypePattern\PrototypePattern.csproj", "{6190EA42-58BF-49C4-BFA6-12A2F2B3B7FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{47ADF2B7-7C23-4A8D-9BC6-EEA313CD184A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6190EA42-58BF-49C4-BFA6-12A2F2B3B7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6190EA42-58BF-49C4-BFA6-12A2F2B3B7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6190EA42-58BF-49C4-BFA6-12A2F2B3B7FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47ADF2B7-7C23-4A8D-9BC6-EEA313CD184A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47ADF2B7-7C23-4A8D-9BC6-EEA313CD184A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47ADF2B7-7C23-4A8D-9BC6-EEA313CD184A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47ADF2B7-7C23-4A8D-9BC6-EEA313CD184A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
