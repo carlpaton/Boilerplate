@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PrototypePattern.JsonSerializationDemo2NameSpace;
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
@@ -26,11 +28,23 @@ namespace PrototypePattern.BinarySerializationDemoNameSpace
     {
         public string FirstName;
         public Address Address;
+        private IList<InvoiceLineModel> _lineItems { get; set; }
 
         public Person(string firstName, Address address)
         {
             FirstName = firstName;
             Address = address;
+
+            _lineItems = new List<InvoiceLineModel>
+            {
+                new InvoiceLineModel
+                {
+                    InvoiceLineId = 1,
+                    Description = "foo",
+                    Quantity = 123,
+                    Cost = 100
+                }
+            };
         }
 
         public override string ToString()

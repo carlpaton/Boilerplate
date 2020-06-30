@@ -22,7 +22,7 @@ namespace PrototypePattern
 
             // new IProtoTypeDemo();
 
-            // new BinarySerializationDemo();
+            new BinarySerializationDemo();
 
             // new XmlSerializationDemo();
 

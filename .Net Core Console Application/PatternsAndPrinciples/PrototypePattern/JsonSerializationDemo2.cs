@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 
 namespace PrototypePattern.JsonSerializationDemo2NameSpace
 {
@@ -18,10 +19,23 @@ namespace PrototypePattern.JsonSerializationDemo2NameSpace
         public Address Address;
         public string SomeField;
 
+        private IList<InvoiceLineModel> _lineItems { get; set; }
+
         public Person(string firstName, Address address)
         {
             FirstName = firstName;
             Address = address;
+
+            _lineItems = new List<InvoiceLineModel>
+            {
+                new InvoiceLineModel
+                {
+                    InvoiceLineId = 1,
+                    Description = "foo",
+                    Quantity = 123,
+                    Cost = 100
+                }
+            };
         }
 
         public override string ToString()
