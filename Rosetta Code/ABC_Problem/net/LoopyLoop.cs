@@ -8,7 +8,7 @@ namespace ABC_Problem
     {
         public bool MakeWord(string word, List<string> blocks) 
         {
-            var blocksLeft = blocks;
+            var blocksLeft = new List<string>(blocks);
             var stringComparison = StringComparison.CurrentCultureIgnoreCase;
 
             foreach (var letter in word)
@@ -20,6 +20,24 @@ namespace ABC_Problem
             }
 
             return true;
+        }
+
+        public bool MakeWord2(string word, List<string> blocks)
+        {
+            var letters = word.ToList();
+            var blocksLeft = new List<string>(blocks);
+            var stringComparison = StringComparison.CurrentCultureIgnoreCase;
+
+            letters.ForEach(letter => {
+
+                if (!blocksLeft.Any(b => b.Contains(letter, stringComparison)))
+                    return;
+
+                blocksLeft.Remove(blocksLeft.First(b => b.Contains(letter, stringComparison)));
+
+            });
+
+            return blocksLeft.Count() + letters.Count() == blocks.Count();
         }
     }
 }

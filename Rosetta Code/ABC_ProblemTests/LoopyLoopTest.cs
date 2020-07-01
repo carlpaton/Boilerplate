@@ -6,8 +6,7 @@ namespace Tests
 {
     public class Tests
     {
-        // WHY IS THERE NEW HERE CARL?
-        private new List<string> _blocks;
+        private List<string> _blocks;
 
         [SetUp]
         public void Setup()
