@@ -3,4 +3,4 @@ Each time some random code related thing grabs my attention I create a new repos
 ### Yield
 
 * https://carlpaton.github.io/2020/07/yield
-* https://github.com/carlpaton/Boilerplate/tree/master/YieldDemo
+* https://github.com/carlpaton/Boilerplate/tree/master/Random/Yield
