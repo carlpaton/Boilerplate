@@ -55,7 +55,7 @@ True
 True
 ```
 
-
+![Blocks Example](https://raw.githubusercontent.com/carlpaton/Boilerplate/master/Rosetta%20Code/ABC_Problem/blocks%20example.jpg)
 
 ### References
 
