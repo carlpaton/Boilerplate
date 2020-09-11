@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace ABC_Problem
 {
-    public class LoopyLoop
+    public class MakeWord
     {
         /// <summary>
         /// Using a normal `foreach` loop
@@ -13,7 +13,7 @@ namespace ABC_Problem
         /// <param name="word"></param>
         /// <param name="blocks"></param>
         /// <returns></returns>
-        public bool MakeWord(string word, List<string> blocks) 
+        public bool ForeachLoop(string word, List<string> blocks) 
         {
             var blocksLeft = new List<string>(blocks);
             var stringComparison = StringComparison.CurrentCultureIgnoreCase;
@@ -35,7 +35,7 @@ namespace ABC_Problem
         /// <param name="word"></param>
         /// <param name="blocks"></param>
         /// <returns></returns>
-        public bool MakeWord2(string word, List<string> blocks)
+        public bool ActionDelegate(string word, List<string> blocks)
         {
             var letters = word.ToList();
             var blocksLeft = new List<string>(blocks);
@@ -58,7 +58,7 @@ namespace ABC_Problem
         /// </summary>
         /// <param name="word"></param>
         /// <returns></returns>
-        public bool MakeWord3(string word, string blocks)
+        public bool Regex(string word, string blocks)
         {
             for (int i = 0; i < word.Length; ++i)
             {
@@ -68,16 +68,6 @@ namespace ABC_Problem
                 if (blocks.Length == length) return false;
             }
             return true;
-        }
-
-        /// <summary>
-        /// yield result? - https://stackoverflow.com/questions/44798975/trouble-understanding-yield-in-c-sharp?noredirect=1&lq=1
-        /// dunno if this is a good candidate for yield :D
-        /// </summary>
-        /// <returns></returns>
-        public bool MakeWord4()
-        {
-            throw new NotImplementedException("hey go learn how to use yield :D");
         }
     }
 }
