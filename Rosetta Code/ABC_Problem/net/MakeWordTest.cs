@@ -1,8 +1,7 @@
-using ABC_Problem;
 using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace Tests
+namespace ABC_Problem
 {
     [TestFixture]
     public class Tests
