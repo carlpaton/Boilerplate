@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace ABC_Problem
+namespace ABCProblem
 {
     class Program
     {

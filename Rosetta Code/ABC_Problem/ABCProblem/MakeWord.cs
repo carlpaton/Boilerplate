@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace ABC_Problem
+namespace ABCProblem
 {
     public class MakeWord
     {
@@ -13,7 +13,7 @@ namespace ABC_Problem
         /// <param name="word"></param>
         /// <param name="blocks"></param>
         /// <returns></returns>
-        public bool ForeachLoop(string word, List<string> blocks) 
+        public bool ForeachLoop(string word, List<string> blocks)
         {
             var blocksLeft = new List<string>(blocks);
             var stringComparison = StringComparison.CurrentCultureIgnoreCase;
