@@ -57,7 +57,7 @@ True
 
 The word `BARK` was made up using blocks as follows:
  
-![Blocks Example](https://raw.githubusercontent.com/carlpaton/Boilerplate/master/Rosetta%20Code/ABC_Problem/blocks%20example.jpg)
+![Blocks Example](https://github.com/carlpaton/Boilerplate/blob/master/Rosetta%20Code/ABC_Problem/docs/blocks%20example.jpg?raw=true)
 
 ### References
 
